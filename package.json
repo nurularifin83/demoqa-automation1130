@@ -1,0 +1,20 @@
+{
+  "name": "demoqa-automation",
+  "version": "1.0.0",
+  "description": "This is automation testing for demoqa web with playright",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [
+    "Playwright",
+    "Automation",
+    "QA",
+    "DemoQA"
+  ],
+  "author": "Nurul Arifin",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.57.0",
+    "@types/node": "^24.10.1",
+    "allure-playwright": "^3.4.2"
+  }
+}
