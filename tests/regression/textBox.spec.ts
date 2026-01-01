@@ -14,13 +14,16 @@ test.describe("DEMOQA Text Box module", () => {
   test.beforeEach(({ page }: {page: Page}) => {
     textBoxPage = new TextBoxPage(page);
     homePage = new HomePage(page);
+
+    setMeta({
+      owner: "Nurul Arifin",
+    });
   });
 
   test("@regression Verify open the page and add new user", async () => {
 
     // Report metadata
     setMeta({
-      owner: "Nurul Arifin",
       severity: Severity.CRITICAL,
       tags: ["web", "add data", "regression"],
     });
@@ -44,7 +47,6 @@ test.describe("DEMOQA Text Box module", () => {
 
     // Report metadata
     setMeta({
-      owner: "Nurul Arifin",
       severity: Severity.CRITICAL,
       tags: ["web", "invalid", "regression"],
     });
@@ -63,7 +65,6 @@ test.describe("DEMOQA Text Box module", () => {
 
     // Report metadata
     setMeta({
-      owner: "Nurul Arifin",
       severity: Severity.CRITICAL,
       tags: ["web", "invalid email", "regression"],
     });
