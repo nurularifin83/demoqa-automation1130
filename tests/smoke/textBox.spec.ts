@@ -5,6 +5,7 @@ import HomePage from "../../pages/HomePage";
 import { generateRandomEmail } from "../../utils/helper";
 import { setMeta } from "../../utils/allure";
 
+
 test.describe("DEMOQA Text Box module", () => {
   let textBoxPage: TextBoxPage
   let homePage: HomePage;
@@ -19,7 +20,6 @@ test.describe("DEMOQA Text Box module", () => {
 
     // Report metadata
     setMeta({
-      name: "Text Box Smoke Test",
       owner: "Nurul Arifin",
       severity: Severity.CRITICAL,
       tags: ["web", "Input", "smoke"],

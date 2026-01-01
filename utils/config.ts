@@ -14,10 +14,10 @@ export const CONFIG: AppConfig = {
   TIMEOUT: 120000,
   TESDIR: "./tests",
   RETRIES: process.env.CI ? 2 : 0,
-  WORKERS: 1,
+  WORKERS: 3,
   ARGS: "--start-maximized",
 
   // 💻 Browser settings
-  HEADLESS: process.env.HEADLESS === "true",
+  HEADLESS: process.env.HEADLESS !== "false",
   VIEWPORT: null,
 };

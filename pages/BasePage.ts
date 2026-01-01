@@ -73,8 +73,7 @@ export default class BasePage {
 
     async safeGoto(
         url: string,
-        waitUntil: "domcontentloaded" | "load" | "networkidle" =
-            "domcontentloaded",
+        waitUntil: "load" | "domcontentloaded" | "networkidle" = "load",
     ): Promise<void> {
         try {
             if (this.page.isClosed()) {
@@ -112,7 +111,7 @@ export default class BasePage {
                 }
 
                 // Wait for page to be ready and ads removed
-                await this.page.waitForLoadState("domcontentloaded");
+                await this.page.waitForLoadState("load");
                 await this.page.waitForTimeout(800); // small buffer for animations
 
                 // 🧹 Remove ad overlays (DemoQA issue)

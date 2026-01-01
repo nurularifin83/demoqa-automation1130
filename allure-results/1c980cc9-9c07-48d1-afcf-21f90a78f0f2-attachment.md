@@ -1,0 +1,110 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - link [ref=e4] [cursor=pointer]:
+      - /url: https://demoqa.com
+      - img [ref=e5]
+  - generic [ref=e8]:
+    - generic [ref=e11]:
+      - generic [ref=e12]:
+        - generic [ref=e14] [cursor=pointer]:
+          - generic [ref=e15]:
+            - img [ref=e17]
+            - text: Elements
+          - img [ref=e22]
+        - list [ref=e27]:
+          - listitem [ref=e28] [cursor=pointer]:
+            - img [ref=e29]
+            - generic [ref=e31]: Text Box
+          - listitem [ref=e32] [cursor=pointer]:
+            - img [ref=e33]
+            - generic [ref=e35]: Check Box
+          - listitem [ref=e36] [cursor=pointer]:
+            - img [ref=e37]
+            - generic [ref=e39]: Radio Button
+          - listitem [ref=e40] [cursor=pointer]:
+            - img [ref=e41]
+            - generic [ref=e43]: Web Tables
+          - listitem [ref=e44] [cursor=pointer]:
+            - img [ref=e45]
+            - generic [ref=e47]: Buttons
+          - listitem [ref=e48] [cursor=pointer]:
+            - img [ref=e49]
+            - generic [ref=e51]: Links
+          - listitem [ref=e52] [cursor=pointer]:
+            - img [ref=e53]
+            - generic [ref=e55]: Broken Links - Images
+          - listitem [ref=e56] [cursor=pointer]:
+            - img [ref=e57]
+            - generic [ref=e59]: Upload and Download
+          - listitem [ref=e60] [cursor=pointer]:
+            - img [ref=e61]
+            - generic [ref=e63]: Dynamic Properties
+      - generic [ref=e66] [cursor=pointer]:
+        - generic [ref=e67]:
+          - img [ref=e69]
+          - text: Forms
+        - img [ref=e75]
+      - generic [ref=e81] [cursor=pointer]:
+        - generic [ref=e82]:
+          - img [ref=e84]
+          - text: Alerts, Frame & Windows
+        - img [ref=e89]
+      - generic [ref=e95] [cursor=pointer]:
+        - generic [ref=e96]:
+          - img [ref=e98]
+          - text: Widgets
+        - img [ref=e103]
+      - generic [ref=e109] [cursor=pointer]:
+        - generic [ref=e110]:
+          - img [ref=e112]
+          - text: Interactions
+        - img [ref=e117]
+      - generic [ref=e123] [cursor=pointer]:
+        - generic [ref=e124]:
+          - img [ref=e126]
+          - text: Book Store Application
+        - img [ref=e131]
+    - generic [ref=e135]:
+      - iframe [ref=e138]:
+        
+      - heading "Text Box" [level=1] [ref=e139]
+      - generic [ref=e141]:
+        - generic [ref=e142]:
+          - generic [ref=e144]: Full Name
+          - textbox "Full Name" [ref=e146]
+        - generic [ref=e147]:
+          - generic [ref=e149]: Email
+          - textbox "name@example.com" [ref=e151]
+        - generic [ref=e152]:
+          - generic [ref=e154]: Current Address
+          - textbox "Current Address" [ref=e156]
+        - generic [ref=e157]:
+          - generic [ref=e159]: Permanent Address
+          - textbox [ref=e161]
+        - button "Submit" [active] [ref=e164] [cursor=pointer]
+    - generic [ref=e170]:
+      - img "Build PlayWright tests with AI" [ref=e172] [cursor=pointer]
+      - iframe [ref=e175]:
+        
+      - iframe [ref=e178]:
+        - generic [active] [ref=f16e1]:
+          - iframe [ref=f16e4]:
+            - iframe [ref=f20e3]:
+              - generic [active] [ref=f23e1]:
+                - iframe [ref=f23e3]:
+                  - img [ref=f24e4] [cursor=pointer]
+                - img [ref=f23e4]
+                - img [ref=f23e5]
+                - img [ref=f23e6]
+          - img [ref=f16e8] [cursor=pointer]
+          - button [ref=f16e10] [cursor=pointer]:
+            - img [ref=f16e11]
+          - img [ref=f16e18]
+          - img [ref=f16e19]
+          - img [ref=f16e20]
+  - contentinfo [ref=e179]:
+    - generic [ref=e180]: © 2013-2020 TOOLSQA.COM | ALL RIGHTS RESERVED.
+```

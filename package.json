@@ -3,7 +3,13 @@
   "version": "1.0.0",
   "description": "This is automation testing for demoqa web with playright",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "allure:open": "allure serve allure-results",
+    "pretest": "rimraf allure-results allure-report",
+    "test:smoke": "npx playwright test --grep @smoke",
+    "test:regression": "npx playwright test --grep @regression",
+    "posttest": "allure generate allure-results --clean -o allure-report"
+  },
   "keywords": [
     "Playwright",
     "Automation",
@@ -15,6 +21,7 @@
   "devDependencies": {
     "@playwright/test": "^1.57.0",
     "@types/node": "^24.10.1",
-    "allure-playwright": "^3.4.2"
+    "allure-playwright": "^3.4.2",
+    "rimraf": "^6.1.2"
   }
 }

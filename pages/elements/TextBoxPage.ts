@@ -46,11 +46,8 @@ export default class TextBoxPage extends BasePage {
     }
   }
 
-  async verifyNoOutput() {
-    const selector = "//div[@id='output']";
-    await this.waitForElement(selector, "attached");
-    const text = await this.page.textContent(selector);
-    return !text || text.trim() === "";
+  async isDisplayNameAbsent() {
+    return (await this.page.locator("//p[@id='name']").count()) === 0;
   }
 
   async verifyErrorOnEmail() {

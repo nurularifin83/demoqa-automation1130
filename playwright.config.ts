@@ -52,28 +52,28 @@ export default defineConfig({
       },
     },
 
-    {
-      name: "firefox",
-      use: {
-        viewport: CONFIG.VIEWPORT,
-        launchOptions: {
-          args: [CONFIG.ARGS],
-          firefoxUserPrefs: {
-            "network.http.max-connections": 256,
-            "network.http.connection-timeout": 30,
-            "network.http.response.timeout": 60,
-          },
-        },
-      },
-    },
+    // {
+    //   name: "firefox",
+    //   use: {
+    //     viewport: CONFIG.VIEWPORT,
+    //     launchOptions: {
+    //       args: [CONFIG.ARGS],
+    //       firefoxUserPrefs: {
+    //         "network.http.max-connections": 256,
+    //         "network.http.connection-timeout": 30,
+    //         "network.http.response.timeout": 60,
+    //       },
+    //     },
+    //   },
+    // },
 
-    {
-      name: "webkit",
-      use: {
-        viewport: CONFIG.VIEWPORT,
-        launchOptions: { args: [CONFIG.ARGS] },
-      },
-    },
+    // {
+    //   name: "webkit",
+    //   use: {
+    //     viewport: CONFIG.VIEWPORT,
+    //     launchOptions: { args: [CONFIG.ARGS] },
+    //   },
+    // },
     /* Test against mobile viewports. */
     // {
     //   name: 'Mobile Chrome',
